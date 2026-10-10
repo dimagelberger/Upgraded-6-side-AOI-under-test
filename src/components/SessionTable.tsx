@@ -97,9 +97,9 @@ export function SessionTable({ sessions, duplicateLots }: Props) {
         <table className="w-full font-sans text-zinc-300 relative text-[10px] md:text-xs text-center border-collapse">
           <thead className="uppercase bg-[#183c6c] text-zinc-100 border-b border-zinc-700 sticky top-0 z-10 text-[9px] md:text-[11px] tracking-wider">
             <tr>
-              <th className="p-1.5 md:p-2 text-left cursor-pointer hover:bg-[#1f4a85] min-w-[210px] w-[210px]" onClick={() => handleSort('lotNumber')}>Lot{getSortIcon('lotNumber')}</th>
+              <th className="p-1.5 md:p-2 text-left cursor-pointer hover:bg-[#1f4a85] min-w-[170px] w-[170px]" onClick={() => handleSort('lotNumber')}>Lot{getSortIcon('lotNumber')}</th>
               <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('date')}>Date{getSortIcon('date')}</th>
-              <th className="p-1.5 md:p-2 text-left cursor-pointer hover:bg-[#1f4a85] min-w-[130px] max-w-[130px] w-[130px]" onClick={() => handleSort('model')}>Model{getSortIcon('model')}</th>
+              <th className="p-1.5 md:p-2 text-left cursor-pointer hover:bg-[#1f4a85] min-w-[150px] max-w-[150px] w-[150px]" onClick={() => handleSort('model')}>Model{getSortIcon('model')}</th>
               <th className="p-1.5 md:p-2 text-left cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('barcodeNumber')}>Barcode{getSortIcon('barcodeNumber')}</th>
               <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('total')}>Total{getSortIcon('total')}</th>
               <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('okQty')}>OK{getSortIcon('okQty')}</th>
@@ -165,7 +165,7 @@ export function SessionTable({ sessions, duplicateLots }: Props) {
                       : ''
                   }`}
                 >
-                  <td className="p-1.5 md:p-2 text-left whitespace-nowrap min-w-[210px] w-[210px]" title={s.lotNumber}>
+                  <td className="p-1.5 md:p-2 text-left whitespace-nowrap min-w-[170px] w-[170px]" title={s.lotNumber}>
                      <div className="flex items-center gap-1.5 flex-nowrap">
                        {isDuplicateLot ? (
                           <div className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0 animate-pulse" title="Multi-Run Duplicate Lot (Reconciled)"></div>
@@ -185,7 +185,7 @@ export function SessionTable({ sessions, duplicateLots }: Props) {
                      </div>
                   </td>
                   <td className="p-1.5 md:p-2 text-zinc-350 whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]" title={displayDate}>{displayDate}</td>
-                  <td className="p-1.5 md:p-2 text-left text-zinc-450 font-medium whitespace-nowrap font-mono min-w-[130px] max-w-[130px] w-[130px]" title={s.model}>{s.model}</td>
+                  <td className="p-1.5 md:p-2 text-left text-zinc-450 font-medium whitespace-nowrap font-mono min-w-[150px] max-w-[150px] w-[150px]" title={s.model}>{s.model}</td>
                   <td className="p-1.5 md:p-2 text-left text-zinc-450 font-medium whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]" title={s.barcodeNumber}>{s.barcodeNumber}</td>
                   <td className="p-1.5 md:p-2 whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]" title={s.total.toLocaleString()}>{s.total}</td>
                   <td className="p-1.5 md:p-2 text-emerald-400 font-semibold whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]" title={s.okQty.toLocaleString()}>{s.okQty}</td>
