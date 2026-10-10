@@ -98,20 +98,20 @@ export function SessionTable({ sessions, duplicateLots }: Props) {
           <thead className="uppercase bg-[#183c6c] text-zinc-100 border-b border-zinc-700 sticky top-0 z-10 text-[9px] md:text-[11px] tracking-wider">
             <tr>
               <th className="p-1.5 md:p-2 text-left cursor-pointer hover:bg-[#1f4a85] min-w-[210px] w-[210px]" onClick={() => handleSort('lotNumber')}>Lot{getSortIcon('lotNumber')}</th>
-              <th className="p-1 cursor-pointer hover:bg-[#1f4a85] min-w-[65px] max-w-[70px] w-[68px]" onClick={() => handleSort('date')}>Date{getSortIcon('date')}</th>
+              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('date')}>Date{getSortIcon('date')}</th>
               <th className="p-1.5 md:p-2 text-left cursor-pointer hover:bg-[#1f4a85] max-w-[100px] w-[100px]" onClick={() => handleSort('model')}>Model{getSortIcon('model')}</th>
-              <th className="p-1.5 md:p-2 text-left cursor-pointer hover:bg-[#1f4a85] max-w-[100px] w-[100px]" onClick={() => handleSort('barcodeNumber')}>Barcode{getSortIcon('barcodeNumber')}</th>
-              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85]" onClick={() => handleSort('total')}>Total{getSortIcon('total')}</th>
-              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85]" onClick={() => handleSort('okQty')}>OK{getSortIcon('okQty')}</th>
-              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] text-zinc-100 font-semibold" onClick={() => handleSort('sumNg')}>NG{getSortIcon('sumNg')}</th>
-              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85]" onClick={() => handleSort('ng1Qty')}>NG1{getSortIcon('ng1Qty')}</th>
-              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85]" onClick={() => handleSort('ng2Qty')}>NG2{getSortIcon('ng2Qty')}</th>
-              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85]" onClick={() => handleSort('ng3Qty')}>NG3{getSortIcon('ng3Qty')}</th>
-              <th className="p-1 cursor-pointer hover:bg-[#1f4a85] w-[50px]" onClick={() => handleSort('retestQty')}>Retest{getSortIcon('retestQty')}</th>
-              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85]" onClick={() => handleSort('yieldRate')}>Yield{getSortIcon('yieldRate')}</th>
-              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85]" onClick={() => handleSort('ngRate')}>NG %{getSortIcon('ngRate')}</th>
-              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85]" onClick={() => handleSort('rstRate')}>RST %{getSortIcon('rstRate')}</th>
-              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[75px] w-[75px]" onClick={() => handleSort('startTime')}>Time{getSortIcon('startTime')}</th>
+              <th className="p-1.5 md:p-2 text-left cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('barcodeNumber')}>Barcode{getSortIcon('barcodeNumber')}</th>
+              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('total')}>Total{getSortIcon('total')}</th>
+              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('okQty')}>OK{getSortIcon('okQty')}</th>
+              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] text-zinc-100 font-semibold min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('sumNg')}>NG{getSortIcon('sumNg')}</th>
+              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('ng1Qty')}>NG1{getSortIcon('ng1Qty')}</th>
+              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('ng2Qty')}>NG2{getSortIcon('ng2Qty')}</th>
+              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('ng3Qty')}>NG3{getSortIcon('ng3Qty')}</th>
+              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('retestQty')}>Retest{getSortIcon('retestQty')}</th>
+              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('yieldRate')}>Yield{getSortIcon('yieldRate')}</th>
+              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('ngRate')}>NG %{getSortIcon('ngRate')}</th>
+              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('rstRate')}>RST %{getSortIcon('rstRate')}</th>
+              <th className="p-1.5 md:p-2 cursor-pointer hover:bg-[#1f4a85] min-w-[100px] max-w-[100px] w-[100px]" onClick={() => handleSort('startTime')}>Time{getSortIcon('startTime')}</th>
             </tr>
           </thead>
           <tbody>
@@ -161,7 +161,7 @@ export function SessionTable({ sessions, duplicateLots }: Props) {
                       : isLowYield 
                       ? 'bg-red-950/15' 
                       : isMidYield 
-                      ? 'bg-amber-950/8' 
+                      ? 'bg-amber-955/8' 
                       : ''
                   }`}
                 >
@@ -184,22 +184,22 @@ export function SessionTable({ sessions, duplicateLots }: Props) {
                         )}
                      </div>
                   </td>
-                  <td className="p-1 text-zinc-350 whitespace-nowrap font-mono min-w-[65px] max-w-[70px] w-[68px]" title={displayDate}>{displayDate}</td>
-                  <td className="p-1.5 md:p-2 text-left text-zinc-450 font-medium whitespace-nowrap font-mono" title={s.model}>{s.model}</td>
-                  <td className="p-1.5 md:p-2 text-left text-zinc-450 font-medium whitespace-nowrap font-mono" title={s.barcodeNumber}>{s.barcodeNumber}</td>
-                  <td className="p-1.5 md:p-2 whitespace-nowrap font-mono" title={s.total.toLocaleString()}>{s.total}</td>
-                  <td className="p-1.5 md:p-2 text-emerald-400 font-semibold whitespace-nowrap font-mono" title={s.okQty.toLocaleString()}>{s.okQty}</td>
-                  <td className="p-1.5 md:p-2 text-red-400 font-semibold whitespace-nowrap font-mono text-[10px] md:text-xs" title={(s.ng1Qty + s.ng2Qty + s.ng3Qty).toLocaleString()}>{s.ng1Qty + s.ng2Qty + s.ng3Qty}</td>
-                  <td className="p-1.5 md:p-2 text-zinc-350 whitespace-nowrap font-mono">{s.ng1Qty}</td>
-                  <td className="p-1.5 md:p-2 text-zinc-350 whitespace-nowrap font-mono">{s.ng2Qty}</td>
-                  <td className="p-1.5 md:p-2 text-zinc-350 whitespace-nowrap font-mono">{s.ng3Qty}</td>
-                  <td className="p-1.5 md:p-2 text-indigo-350 font-mono">{s.retestQty}</td>
-                  <td className={`p-1.5 md:p-2 font-bold whitespace-nowrap font-mono ${yieldColorClass}`}>
+                  <td className="p-1.5 md:p-2 text-zinc-350 whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]" title={displayDate}>{displayDate}</td>
+                  <td className="p-1.5 md:p-2 text-left text-zinc-450 font-medium whitespace-nowrap font-mono max-w-[100px] w-[100px]" title={s.model}>{s.model}</td>
+                  <td className="p-1.5 md:p-2 text-left text-zinc-450 font-medium whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]" title={s.barcodeNumber}>{s.barcodeNumber}</td>
+                  <td className="p-1.5 md:p-2 whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]" title={s.total.toLocaleString()}>{s.total}</td>
+                  <td className="p-1.5 md:p-2 text-emerald-400 font-semibold whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]" title={s.okQty.toLocaleString()}>{s.okQty}</td>
+                  <td className="p-1.5 md:p-2 text-red-400 font-semibold whitespace-nowrap font-mono text-[10px] md:text-xs min-w-[100px] max-w-[100px] w-[100px]" title={(s.ng1Qty + s.ng2Qty + s.ng3Qty).toLocaleString()}>{s.ng1Qty + s.ng2Qty + s.ng3Qty}</td>
+                  <td className="p-1.5 md:p-2 text-zinc-350 whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]">{s.ng1Qty}</td>
+                  <td className="p-1.5 md:p-2 text-zinc-350 whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]">{s.ng2Qty}</td>
+                  <td className="p-1.5 md:p-2 text-zinc-350 whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]">{s.ng3Qty}</td>
+                  <td className="p-1.5 md:p-2 text-indigo-350 font-mono min-w-[100px] max-w-[100px] w-[100px]">{s.retestQty}</td>
+                  <td className={`p-1.5 md:p-2 font-bold whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px] ${yieldColorClass}`}>
                      {formatRate(s.yieldRate)}
                   </td>
-                  <td className="p-1.5 md:p-2 text-zinc-400 whitespace-nowrap font-mono">{formatRate(s.ngRate)}</td>
-                  <td className="p-1.5 md:p-2 text-zinc-400 whitespace-nowrap font-mono">{formatRate(s.rstRate)}</td>
-                  <td className="p-1.5 md:p-2 text-zinc-400 font-semibold whitespace-nowrap font-mono min-w-[75px] w-[75px]">{s.startTime.split(' ')[1] || s.startTime}</td>
+                  <td className="p-1.5 md:p-2 text-zinc-400 whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]">{formatRate(s.ngRate)}</td>
+                  <td className="p-1.5 md:p-2 text-zinc-400 whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]">{formatRate(s.rstRate)}</td>
+                  <td className="p-1.5 md:p-2 text-zinc-400 font-semibold whitespace-nowrap font-mono min-w-[100px] max-w-[100px] w-[100px]">{s.startTime.split(' ')[1] || s.startTime}</td>
                 </tr>
               )
             })}
