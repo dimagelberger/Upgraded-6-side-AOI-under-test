@@ -1,0 +1,6 @@
+{
+  "name": "AOI Log Defect Analyzer",
+  "description": "An interactive dashboard for parsing and analyzing Automated Optical Inspection (AOI) logs, featuring Pareto charts, defect tables, and heatmaps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
