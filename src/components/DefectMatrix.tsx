@@ -172,6 +172,11 @@ export function DefectMatrix({ defects, rawDefects, universalDefects, sessions, 
        if (viewMode === 'UNIVERSAL') {
           cam = (d.camera || 'GLOBAL / WHOLE-BODY').trim().toUpperCase();
           normItem = d.baseCategory || d.testItem;
+          // For the universal filter: don't show "Coating Brightness" and "Angle"
+          const itemLower = normItem.toLowerCase();
+          if (itemLower.includes('angle') || itemLower.includes('coating brightness')) {
+             return;
+          }
           qtyVal = d.normalizedNgQty ?? d.ngQty;
        } else if (viewMode === 'CATEGORY') {
           cam = getUnifiedCamera(d.camera);

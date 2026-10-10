@@ -165,6 +165,11 @@ export function normalizeDefectsList(
 
       if (mode === 'UNIVERSAL') {
         const u = getUniversalCategoryAndCamera(d.testItem, d.camera);
+        // For the universal filter: don't show "Coating Brightness" and "Angle"
+        const catLower = u.category.toLowerCase();
+        if (catLower.includes('angle') || catLower.includes('coating brightness')) {
+          return;
+        }
         targetCam = u.camera;
         targetCat = u.category;
         sortOrderNo = u.orderNo < 100 ? u.orderNo : (isRedundant ? (100 + d.no) : d.no);
